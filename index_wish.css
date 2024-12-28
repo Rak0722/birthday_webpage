@@ -227,12 +227,12 @@ h1 {
 
         .footvid{
           height: 100vh;
-          /* background: linear-gradient(to right,violet, purple); */
-          /* background-image: url(./assets/k3.jpg); */
+          margin-left: 0%;
+          width: auto;
           background-repeat: no-repeat;
           background-position:top;
           background-size: cover;
-          margin-top: 75px;
+          margin-top: 25px;
     }
 
 
