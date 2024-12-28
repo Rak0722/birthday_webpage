@@ -715,7 +715,7 @@ body {
 	}
 
 /* text hover */
-body {
+/* body {
   
   text-align: center;
 
@@ -734,10 +734,7 @@ body {
   animation: animatess 3s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
-  /* background-color:#001c35; */
-  /* background-image: url(./assets/InShot_20211002_121718166.jpg);
-  background-attachment: fixed; */
-}
+} */
 
 @keyframes animatess {
   0% {
