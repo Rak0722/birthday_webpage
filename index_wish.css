@@ -715,35 +715,46 @@ body {
 	}
 
 /* text hover */
-body {
-  
-  text-align: center;
 
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Cursor */
+.cursor{
+    position: relative;
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 30px;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
 }
-.para {
-  text-align: center;
-  position: relative;
-  font-family: Haettenschweiler;
-  text-transform: uppercase;
-  font-size: 1.2em;
-  letter-spacing: 4px;
-  overflow: hidden;
-  background: linear-gradient(90deg, #000000,rgb(234, 249, 255), #000000);
-  background-repeat: no-repeat;
-  background-size: 80%;
-  animation: animatess 3s linear infinite;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+/* Animation */
+.typewriter-animation {
+  animation: 
+    typewriter 5s steps(50) 1s 1 normal both, 
+    blinkingCursor 500ms steps(50) infinite normal;
+}
+@keyframes typewriter {
+  from { width: 0; }
+  to { width: 100%; }
+}
+@keyframes blinkingCursor{
+  from { border-right-color: rgba(255,255,255,.75); }
+  to { border-right-color: transparent; }
 }
 
-@keyframes animatess {
-  0% {
-    background-position: -500%;
-  }
-  100% {
-    background-position: 500%;
-  }
-}
+
+
+
+
+/* Global */
+ body { 
+  margin-top: 8em;
+   padding: 5em;  } 
 
 
 
