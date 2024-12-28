@@ -731,7 +731,7 @@ body {
   background: linear-gradient(90deg, #000000,rgb(234, 249, 255), #000000);
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: animate 3s linear infinite;
+  animation: animatess 3s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   /* background-color:#001c35; */
@@ -739,7 +739,7 @@ body {
   background-attachment: fixed; */
 }
 
-@keyframes animate {
+@keyframes animatess {
   0% {
     background-position: -500%;
   }
