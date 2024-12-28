@@ -721,16 +721,17 @@ body {
 
 }
 .para {
+  text-align: center;
   position: relative;
   font-family: Haettenschweiler;
   text-transform: uppercase;
-  font-size: 2em;
+  font-size: 1.2em;
   letter-spacing: 4px;
   overflow: hidden;
   background: linear-gradient(90deg, #000000,rgb(234, 249, 255), #000000);
   background-repeat: no-repeat;
   background-size: 80%;
-  animation: animate 5s linear infinite;
+  animation: animate 3s linear infinite;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
   /* background-color:#001c35; */
