@@ -186,9 +186,9 @@ h1 {
         }
 
         .gallery-section h2 {
-            color: #E63946;
+            color: #ff0015;
             margin-bottom: 20px;
-            font-size: 35px;
+            font-size: 25px;
             font-weight: 900;
             font-stretch:extra-expanded ;
         }
@@ -443,22 +443,24 @@ body {
 
 .topic {
   /* position: absolute; */
-  margin: 10px 0px 10px 0px;
-  font-family: Fredericka the Great;
+  margin: 40px 0px 10px 0px;
+  font-style: normal;
+  font-size: xx-large;
+  /* font-family: Fredericka the Great; */
 }
 
 .content-1 {
   /* position: absolute; */
   margin: 30px 0px 10px 0px;
-  font-family: Lovers Quarrel;
-  font-size: 40px;
+  /* font-family: Lovers Quarrel; */
+  font-size: 20px;
 }  
 
 .content-2 {
   /* position: absolute; */
   margin: 0px 0px 80px 0px;
   font-family: Lovers Quarrel;
-  font-size: 40px;
+  font-size: 20px;
 }  
 
 .lup {
@@ -515,8 +517,8 @@ body {
   background-color: #990000;
 }
 
-.heart:active {
-}
+/* .heart:active {
+} */
 
 @keyframes beat {
   0% {
@@ -540,7 +542,7 @@ body {
 
       
 body {
-	background: pink;
+	background:rgb(252, 204, 212);
 }
 
 .letter-image {
@@ -712,3 +714,35 @@ body {
 		}
 	}
 
+/* text hover */
+body {
+  
+  text-align: center;
+
+}
+.para {
+  position: relative;
+  font-family: Haettenschweiler;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 4px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000000,rgb(234, 249, 255), #000000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 5s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  /* background-color:#001c35; */
+  /* background-image: url(./assets/InShot_20211002_121718166.jpg);
+  background-attachment: fixed; */
+}
+
+@keyframes animate {
+  0% {
+    background-position: -500%;
+  }
+  100% {
+    background-position: 500%;
+  }
+}
