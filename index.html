@@ -24,15 +24,19 @@ Gold (#FFD700) -->
     
 </head>
 <body>
+  <!-- <div class="loader2" id="loader2"></div> -->
      <nav  class="navbar navbar-light " style="height: 45px; text-decoration: none;"> 
         <span class="navbar-text">
           &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="./timeline2.html">Only For My Love!!❤️</a>
         </span>
       </nav>
+      
 
       <!-- Only For My Love!!❤️ -->
     <!-- Hero Section -->
     <div class="hero-section">
+      <div class="loader2" id="loader2"></div>
+
         <video muted loop autoplay>
             <source src="./assets/rakavi_edit.mp4" type="video/mp4">
           </video>
@@ -296,7 +300,25 @@ Gold (#FFD700) -->
     </video>
   </div>
 
-    <!-- Bootstrap JS -->
+
+
+
+
+
+
+
+
+
+<!-- -------------------------------------------fully script side----------------------------------- -->
+  
+
+
+
+
+
+
+
+<!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Optional Custom JS -->
     <script>
@@ -333,6 +355,22 @@ const songButton = document.getElementById('songButton');
         document.body.addEventListener('touchstart', function () {
         });
     </script>
+
+
+<script>
+  document.onreadystatechange = function () {
+     if (document.readyState !== "complete") {
+        document.querySelector("body").style.visibility = "hidden";
+        document.getElementById("loader2").style.visibility = "visible";
+     } else {
+        setTimeout(() => {
+           document.getElementById("loader2").style.display ="none";
+           document.querySelector("body").style.visibility = "visible";
+        }, 2000)
+     }
+  };
+</script>
+
 
 </body>
 </html>
